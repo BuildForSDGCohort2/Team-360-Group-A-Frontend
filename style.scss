@@ -1,0 +1,99 @@
+$max-width: 1440px;
+
+.bg-white {
+	background: #fff !important;
+}
+
+.wrapper {
+	max-width: $max-width;
+	margin: 0 auto;
+	font-family: "Montserrat Alternates", sans-serif;
+}
+
+.navbar {
+	.logo {
+		width: 120px;
+		height: 40px;
+	}
+
+	.navbar-toggler,
+	.navbar-toggler:focus {
+		outline-width: 0;
+		border-color: transparent;
+	}
+
+	.nav-link {
+		line-height: 40px;
+		border-bottom: 2px solid #fff;
+		font-size: 18px;
+		transition: all 600ms ease-in-out;
+	}
+
+	@media screen and (min-width: $max-width) {
+		.nav-link.active {
+			border-bottom-color: #000;
+		}
+
+		.nav-link:hover:not(.active) {
+			border-bottom: 2px solid #000;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		.border-bottom {
+			border-top: 1px solid #000;
+		}
+	}
+}
+
+.banner {
+	.wrapper {
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/banner.jpg") no-repeat;
+		background-size: cover;
+		background-position: center;
+		height: 300px;
+
+		@media screen and (max-width: 767px) {
+			h3 {
+				font-size: 1rem;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+
+		@media screen and (min-width: 768px) {
+			height: 400px;
+		}
+	}
+}
+
+.informed {
+	.stay-safe {
+		width: 300px;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	.overflow-0 {
+		overflow: hidden;
+	}
+}
+
+.sign__up, .sign__in {
+	img {
+		object-fit: cover;
+	}
+
+	&-form {
+		input {
+			border: none;
+			border-bottom: 1px solid #6c757d;
+
+			&:focus {
+				outline: none;
+				border-bottom: 1px solid #000;
+			}
+		}
+	}
+}
