@@ -1,0 +1,88 @@
+.bg-white {
+  background: #fff !important;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.navbar .logo {
+  width: 120px;
+  height: 40px;
+}
+
+.navbar .navbar-toggler,
+.navbar .navbar-toggler:focus {
+  outline-width: 0;
+  border-color: transparent;
+}
+
+.navbar .nav-link {
+  line-height: 40px;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  transition: all 600ms ease-in-out;
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar .nav-link.active {
+    border-bottom-color: #000;
+  }
+  .navbar .nav-link:hover:not(.active) {
+    border-bottom: 2px solid #000;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .border-bottom {
+    border-top: 1px solid #000;
+  }
+}
+
+.banner .wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/banner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  .banner .wrapper h3 {
+    font-size: 1rem;
+  }
+  .banner .wrapper p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner .wrapper {
+    height: 400px;
+  }
+}
+
+.informed .stay-safe {
+  width: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.informed .overflow-0 {
+  overflow: hidden;
+}
+
+.sign__up img, .sign__in img {
+  object-fit: cover;
+}
+
+.sign__up-form input, .sign__in-form input {
+  border: none;
+  border-bottom: 1px solid #6c757d;
+}
+
+.sign__up-form input:focus, .sign__in-form input:focus {
+  outline: none;
+  border-bottom: 1px solid #000;
+}
